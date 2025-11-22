@@ -35,8 +35,7 @@
             </p>
           </div>
 
-          <button class="button save-dialog__button" type="button"
-                  onclick="document.getElementById('save-dialog').close()">
+          <button class="button save-dialog__button" type="button">
             <span class="button__text">Ок</span>
           </button>
         </dialog>
@@ -349,8 +348,7 @@
         </section>
 
         <section class="save">
-          <button class="button save__button" type="button" 
-                  onclick="document.getElementById('save-dialog').showModal()">
+          <button class="button save__button" type="button">
             <svg viewBox="0 0 39 39" class="save__icon">
               <use href="./svg/floppy.svg#floppy-disk" />
             </svg>
@@ -362,5 +360,13 @@
     </div>
 
     <script src="./scripts/like.js"></script>
+    <script>
+      const saveButton = document.querySelector('.save__button');
+      const dialog = document.getElementById('save-dialog');
+      const closeButton = dialog.querySelector('.save-dialog__button');
+
+      saveButton.addEventListener('click', () => dialog.showModal());
+      closeButton.addEventListener('click', () => dialog.close());
+    </script>
   </body>
 </html>
