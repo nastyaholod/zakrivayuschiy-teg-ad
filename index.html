@@ -24,7 +24,7 @@
       </header>
 
       <main class="content">
-        
+
         <dialog class="save-dialog" id="save-dialog">
           <div class="save-dialog__content">
             <svg viewBox="0 0 39 39" class="save-dialog__icon">
@@ -35,11 +35,10 @@
             </p>
           </div>
 
-          <form method="dialog">
-            <button class="button save-dialog__button" type="button" onclick="this.closest('dialog').close()">
-              <span class="button__text">Ок</span>
-            </button>
-          </form>
+          <button class="button save-dialog__button" type="button"
+                  onclick="document.getElementById('save-dialog').close()">
+            <span class="button__text">Ок</span>
+          </button>
         </dialog>
 
 
@@ -350,7 +349,8 @@
         </section>
 
         <section class="save">
-          <button class="button save__button" type="button" onclick="window['save-dialog'].showModal()">
+          <button class="button save__button" type="button" 
+                  onclick="document.getElementById('save-dialog').showModal()">
             <svg viewBox="0 0 39 39" class="save__icon">
               <use href="./svg/floppy.svg#floppy-disk" />
             </svg>
