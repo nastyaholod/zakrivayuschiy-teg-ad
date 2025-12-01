@@ -1,1 +1,1 @@
-https://nastyaholod.github.io/zakrivayuschiy-teg-ad/
+https://github.com/nastyaholod/zakrivayuschiy-teg-ad
