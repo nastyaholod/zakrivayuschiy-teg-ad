@@ -10,6 +10,9 @@
 
 */
 
+/*
+стиои страницы 
+*/
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -24,12 +27,18 @@
   background-color: var(--bg-color);
 }
 
+/*
+фоновая обертка
+*/
 .wrapper {
   width: 100%;
   height: 960px;
   background-image: var(--body-pattern);
 }
 
+/*
+шапка 
+*/
 .header {
   margin-top: clamp(100px, 10vh, 102px);
   margin-bottom: 98px;
@@ -67,6 +76,9 @@
   flex-direction: column;
 }
 
+/*
+сетка карточек
+*/
 .cards {
   display: flex;
   flex-direction: column;
@@ -83,6 +95,9 @@
   pointer-events: none;
 }
 
+/*
+сами карточки 
+*/
 .card {
   position: relative;
   z-index: 2;
@@ -102,6 +117,9 @@
   font-variation-settings: 'wght' var(--title-font-weight)
 }
 
+/*
+контейнер картинки
+*/
 .card__image-container {
   position: relative;
   aspect-ratio: 696 / 696;
@@ -114,6 +132,9 @@
   object-position: center;
 }
 
+/*
+фильтры для картинок
+*/
 .card__image-grayscale {
   filter: grayscale(0.7);
 }
@@ -146,6 +167,9 @@
   filter: contrast(0.8);
 }
 
+/*
+водяной знак
+*/
 .card__watermark {
   position: absolute;
   top: 25px;
@@ -187,6 +211,9 @@
   padding: 25px 25.95px 25px 25px;
 }
 
+/*
+управление карточкой
+*/
 .card__controls {
   display: flex;
   justify-content: flex-end;
@@ -232,6 +259,10 @@
   opacity: 0;
 }
 
+
+/*
+система кнопок
+*/
 .button {
   position: relative;
   border: 2px solid var(--text-color);
@@ -299,6 +330,9 @@
   color: var(--button-text-color, #ffffff);
 }
 
+/*
+диалоговое окно
+*/
 .save-dialog {
   position: fixed;
   inset: 0;
@@ -351,6 +385,9 @@
   background-color: rgb(0 0 0 / 0.75);
 }
 
+/*
+мобильная адаптация 
+*/
 @media (width <= 376px) {
   .card__title {
     display: flex;
